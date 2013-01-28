@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="2.5.0" method="upgrade">
+	<name>Birthdays Package</name>
+	<author>Rene Bentes Pinto</author>
+	<creationDate>21/01/2013</creationDate>
+	<copyright>Copyright (C) 2013 Makesoft, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>renebentes@makesoft.com.br</authorEmail>
+	<authorUrl>http://www.makesoft.com.br</authorUrl>
+	<version>1.1</version>
+	<description>Birthdays package to combine multiple extensions</description>
+	<packagename>birthdays</packagename>
+	<url>http://www.makesoft.com.br</url>
+	<packager>Birthdays Package Team</packager>
+	<packagerurl>http://www.makesoft.com.br</packagerurl>
+	<update>http://www.makesoft.com.br/update</update>
+	<files folder="packages">
+		<file type="component" id="birthdays">com_birthdays</file>
+		<file type="module" id="birthdays" client="site">mod_birthdays_month</file>
+	</files>
+</extension>
