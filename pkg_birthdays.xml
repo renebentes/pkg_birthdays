@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>renebentes@makesoft.com.br</authorEmail>
 	<authorUrl>http://www.makesoft.com.br</authorUrl>
-	<version>1.1</version>
+	<version>1.5</version>
 	<description>Birthdays package to combine multiple extensions</description>
 	<packagename>birthdays</packagename>
 	<url>http://www.makesoft.com.br</url>

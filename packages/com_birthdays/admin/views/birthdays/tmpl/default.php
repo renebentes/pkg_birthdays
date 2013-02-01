@@ -47,13 +47,13 @@ $params		= (isset($this->state->params)) ? $this->state->params : new JObject();
 					<input type="checkbox" name="checkall-toggle" value="" title="<?php echo JText::_('JGLOBAL_CHECK_ALL'); ?>" onclick="Joomla.checkAll(this)" />
 				</th>
 				<th width="10%">
-					<?php echo JText::_('COM_BIRTHDAYS_FIELD_PICTURE_LABEL'); ?>
+					<?php echo JText::_('COM_BIRTHDAYS_HEADING_PICTURE'); ?>
 				</th>
 				<th>
-					<?php echo JHtml::_('grid.sort',  'COM_BIRTHDAYS_FIELD_NAME_LABEL', 'a.name', $listDirn, $listOrder); ?>
+					<?php echo JHtml::_('grid.sort',  'COM_BIRTHDAYS_HEADING_NAME', 'a.name', $listDirn, $listOrder); ?>
 				</th>
 				<th width="10%">
-					<?php echo JHtml::_('grid.sort', 'COM_BIRTHDAYS_FIELD_BIRTHDATE_LABEL', 'a.birthdate', $listDirn, $listOrder); ?>
+					<?php echo JHtml::_('grid.sort', 'COM_BIRTHDAYS_HEADING_BIRTHDATE', 'a.birthdate', $listDirn, $listOrder); ?>
 				</th>
 				<th width="5%">
 					<?php echo JHtml::_('grid.sort', 'JSTATUS', 'a.published', $listDirn, $listOrder); ?>
@@ -108,7 +108,7 @@ $params		= (isset($this->state->params)) ? $this->state->params : new JObject();
 							<?php echo $this->escape($item->name); ?>
 					<?php endif; ?>
 					<p class="smallsub">
-						<span><?php echo JText::_('COM_BIRTHDAYS_FIELD_NICKNAME_LABEL') . ': ' . JText::_('COM_BIRTHDAYS_GRADE_' . $item->grade) . ' ' . $this->escape($item->nickname);?></span>
+						<span><?php echo JText::_('COM_BIRTHDAYS_HEADING_NICKNAME') . ': ' . JText::_('COM_BIRTHDAYS_GRADE_' . $item->grade) . ' ' . $this->escape($item->nickname);?></span>
 						</p>
 				</td>
 				<td class="center">
