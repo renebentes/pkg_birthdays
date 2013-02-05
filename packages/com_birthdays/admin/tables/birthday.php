@@ -141,13 +141,21 @@ class BirthdaysTableBirthday extends JTable
 			}
 		}
 
-		// Verify that the alias is unique
+		// Verify that the name is unique
 		$table = JTable::getInstance('Birthday', 'BirthdaysTable');
-		if ($table->load(array('alias' => $this->alias)) && ($table->id != $this->id || $this->id == 0))
+		if (($table->load(array('name' => $this->name, 'grade' => $this->grade, 'nickname' => $this->nickname))) && ($table->id != $this->id || $this->id == 0))
 		{
-			$this->setError(JText::_('JLIB_DATABASE_ERROR_ARTICLE_UNIQUE_ALIAS'));
+			$this->setError(JText::_('COM_BIRTHDAYS_DATABASE_ERROR_UNIQUE_BIRTHDAY'));
 			return false;
 		}
+
+		// Verify that the alias is unique
+		if ($table->load(array('alias' => $this->alias)) && ($table->id != $this->id || $this->id == 0))
+		{
+			$this->setError(JText::_('COM_BIRTHDAYS_DATABASE_ERROR_UNIQUE_ALIAS'));
+			return false;
+		}
+
 		return parent::store($updateNulls);
 	}
 }

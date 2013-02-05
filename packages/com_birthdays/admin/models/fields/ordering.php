@@ -51,10 +51,10 @@ class JFormFieldOrdering extends JFormField
 		$birthdayId  = (int) $this->form->getValue('id');
 
 		// Build the query for the ordering list.
-		$query = 'SELECT ordering AS value, name AS text'
-			. ' FROM #__birthdays'
-			. ' WHERE published >= 0'
-			. ' ORDER BY id';
+		$query = 'SELECT ordering AS value, name AS text '
+			. 'FROM #__birthdays '
+			. 'WHERE published >= 0 '
+			. 'ORDER BY id';
 
 		// Create a read-only list (no name) with a hidden input to store the value.
 		if ((string) $this->element['readonly'] == 'true')

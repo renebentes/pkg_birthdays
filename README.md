@@ -1,7 +1,7 @@
 pkg_birthdays
 =============
 
-Extension Package for managing birthdays supported by Joomla! 2.5 developed as a way of learning.
+Extension Package for managing birthdays supported by Joomla! 2.5 and template with Twitter Bootstrap developed as a way of learning.
 
 ## Authors
 

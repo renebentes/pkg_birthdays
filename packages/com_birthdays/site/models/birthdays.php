@@ -85,8 +85,20 @@ class BirthdaysModelBirthdays extends JModelList
 			$query->where('a.published = ' . (int) $published);
 		}
 
+		// Filter by search in name.
+		$search = $this->getState('filter.search');
+		if (!empty($search)) {
+			if (stripos($search, 'id:') === 0) {
+				$query->where('a.id = '.(int) substr($search, 3));
+			}
+			else {
+				$search = $db->Quote('%'.$db->escape($search, true).'%');
+				$query->where('(a.name LIKE '. $search . ' OR a.alias LIKE ' . $search . ' OR a.nickname LIKE ' . $search . ')');
+			}
+		}
+
 		// Add the list ordering clause.
-		$query->order($db->escape($this->getState('list.ordering', 'a.ordering')) . ' ' . $db->escape($this->getState('list.direction', 'ASC')));
+		$query->order($db->escape($this->getState('list.ordering', 'a.name')) . ' ' . $db->escape($this->getState('list.direction', 'ASC')));
 
 		return $query;
 	}
@@ -107,20 +119,23 @@ class BirthdaysModelBirthdays extends JModelList
 	{
 		// Initialise variables.
 		$app    = JFactory::getApplication();
-		$params = JComponentHelper::getParams('com_birthdays');
+		$params = $app->getParams();
 
 		// List state information
-		$limit = $app->getUserStateFromRequest('global.list.limit', 'limit', $app->getCfg('list_limit'), 'uint');
-		$this->setState('list.limit', $limit);
+		$search = $this->getUserStateFromRequest($this->context.'.filter.search', 'filter_search');
+		$this->setState('filter.search', $search);
 
 		$limitstart = JRequest::getUInt('limitstart', 0);
 		$this->setState('list.start', $limitstart);
 
-		$orderCol = JRequest::getCmd('filter_order', 'ordering');
+		$limit = $app->getUserStateFromRequest($this->context.'.list.limit', 'limit', $params->get('display_num'), 'uint');
+		$this->setState('list.limit', $limit);
+
+		$orderCol = JRequest::getCmd('filter_order', 'name');
 
 		if (!in_array($orderCol, $this->filter_fields))
 		{
-			$orderCol = 'ordering';
+			$orderCol = 'name';
 		}
 
 		$this->setState('list.ordering', $orderCol);

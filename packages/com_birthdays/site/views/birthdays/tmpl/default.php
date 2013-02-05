@@ -10,8 +10,9 @@
 defined('_JEXEC') or die;
 
 require_once JPATH_COMPONENT_ADMINISTRATOR.'/helpers/birthdays.php';
+$listOrder	= $this->escape($this->state->get('list.ordering'));
+$listDirn	= $this->escape($this->state->get('list.direction'));
 ?>
-
 <div class="birthdays-list<?php echo $this->pageclass_sfx; ?>">
 	<?php if ($this->params->get('show_page_heading', 1)): ?>
 	<h1>
@@ -22,21 +23,28 @@ require_once JPATH_COMPONENT_ADMINISTRATOR.'/helpers/birthdays.php';
 	<?php if (empty($this->items)) : ?>
 	<p><?php echo JText::_('COM_BIRTHDAYS_NO_BIRTHDAYS'); ?></p>
 	<?php else : ?>
-	<form action="<?php echo htmlspecialchars(JFactory::getURI()->toString()); ?>" method="post" name="adminForm" id="adminForm">
+	<form action="<?php echo htmlspecialchars(JFactory::getURI()->toString()); ?>" method="post" name="adminForm" id="adminForm" class="form-inline">
 		<?php if ($this->params->get('show_pagination_limit') || $this->params->get('filter_field') != 0) : ?>
-		<fieldset class="alert alert-info">
+		<fieldset class="well well-small">
 			<?php if($this->params->get('filter_field') == 1) : ?>
-			<legend><?php echo JText::_('JGLOBAL_FILTER_LABEL'); ?></legend>
+			<div class="pull-left">
+				<label class="control-label" for="filter_search"><?php echo JText::_('JGLOBAL_FILTER_LABEL'); ?></label>
+				<div class="input-append">
+					<input type="text" name="filter_search" id="filter_search" class="input-small" value="<?php echo $this->escape($this->state->get('filter.search')); ?>" title="<?php echo JText::_('COM_BIRTHDAYS_FILTER_NAME'); ?>" />
+					<button type="submit" rel="tooltip" class="btn hasTooltip" data-original-title="<?php echo JText::_('JSEARCH_FILTER_SUBMIT'); ?>" data-placement="bottom"><i class="icon-ok"></i></button>
+					<button type="button" rel="tooltip" class="btn hasTooltip" data-original-title="<?php echo JText::_('JSEARCH_FILTER_CLEAR'); ?>" data-placement="bottom" onclick="document.id('filter_search').value='';this.form.submit();"><i class="icon-remove"></i></button>
+				</div>
+			</div>
 			<?php endif; ?>
 
 			<?php if ($this->params->get('show_pagination_limit')) : ?>
 			<div class="pull-right">
-				<label><?php echo JText::_('JGLOBAL_DISPLAY_NUM'); ?></label>
+				<label class="control-label" for="limit"><?php echo JText::_('JGLOBAL_DISPLAY_NUM'); ?></label>
 				<?php echo $this->pagination->getLimitBox(); ?>
 			</div>
 			<?php endif; ?>
-			<input type="hidden" name="filter_order" value="" />
-			<input type="hidden" name="filter_order_Dir" value="" />
+			<input type="hidden" name="filter_order" value="<?php echo $listOrder; ?>" />
+			<input type="hidden" name="filter_order_Dir" value="<?php echo $listDirn; ?>" />
 			<input type="hidden" name="limitstart" value="" />
 		</fieldset>
 		<?php endif; ?>
@@ -47,8 +55,8 @@ require_once JPATH_COMPONENT_ADMINISTRATOR.'/helpers/birthdays.php';
 			<thead>
 				<tr>
 					<th><?php echo JText::_('COM_BIRTHDAYS_HEADING_PICTURE'); ?></th>
-					<th><?php echo JText::_('COM_BIRTHDAYS_HEADING_NAME'); ?></th>
-					<th><?php echo JText::_('COM_BIRTHDAYS_HEADING_BIRTHDATE'); ?></th>
+					<th><?php echo JHtml::_('grid.sort',  'COM_BIRTHDAYS_HEADING_NAME', 'a.name', $listDirn, $listOrder); ?></th>
+					<th><?php echo JHtml::_('grid.sort', 'COM_BIRTHDAYS_HEADING_BIRTHDATE', 'a.birthdate', $listDirn, $listOrder); ?></th>
 					<?php if ($this->params->get('show_link_hits')) : ?>
 					<th><?php echo JText::_('JGLOBAL_HITS'); ?></th>
 					<?php endif; ?>
