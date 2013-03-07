@@ -30,6 +30,8 @@ class BirthdaysTableBirthday extends JTable
 	public function __construct(&$db)
 	{
 		parent::__construct('#__birthdays', 'id', $db);
+		$date = JFactory::getDate();
+		$this->created = $date->toSql();
 	}
 
 	/**
