@@ -52,7 +52,6 @@ class Com_BirthdaysInstallerScript
     function uninstall($parent)
     {
         $folder = JPATH_ROOT . DS . 'images/birthdays';
-        $db =& JFactory::getDbo();
 
         if(JFolder::exists($folder))
         {
