@@ -1,0 +1,527 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"en",
+				"endif"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "packages/mod_birthdays_month/tmpl/default.php",
+			"settings":
+			{
+				"buffer_size": 924,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"jf",
+				"Snippet: jfieldordering"
+			],
+			[
+				"jsitemodel",
+				"Snippet: jsitemodellist-category"
+			],
+			[
+				"jsitemo",
+				"Snippet: jsitemodel"
+			],
+			[
+				"jsitemode",
+				"Snippet: jsitemodelfilterpublish"
+			],
+			[
+				"jsitemodelis",
+				"Snippet: jsitemodellist"
+			],
+			[
+				"jsitelayout",
+				"Snippet: jsitelayoutsort"
+			],
+			[
+				"jsitela",
+				"Snippet: jsitelayoutpagination"
+			],
+			[
+				"jsitevi",
+				"Snippet: jsiteviewmenuparamslist"
+			],
+			[
+				"jsi",
+				"Snippet: jsiteviewmenuparamslist"
+			],
+			[
+				"jsite",
+				"Snippet: jsiteviewmenuparamslist"
+			],
+			[
+				"jsiteview",
+				"Snippet: jsiteviewmenuparams"
+			],
+			[
+				"jsiteviewme",
+				"Snippet: jsiteviewmenuparams"
+			],
+			[
+				"jsiteviewmen",
+				"Snippet: jsiteviewmenu"
+			],
+			[
+				"jsiteviewm",
+				"Snippet: jsiteviewmenu"
+			],
+			[
+				"Snippet: jsiteviewmen",
+				"Snippet: jsiteviewmenu"
+			],
+			[
+				"compo",
+				"Snippet: jsitecomponent"
+			],
+			[
+				"Snippet: jcom",
+				"Snippet: jcomponentmanifest"
+			],
+			[
+				"Snippet: jco",
+				"Snippet: jcomponentmanifest"
+			],
+			[
+				"Snippet: jcomp",
+				"Snippet: jcomponentmanifest"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: manifes",
+				"Snippet: jcomponentmanifest"
+			],
+			[
+				"Snippet: html",
+				"Snippet: html"
+			],
+			[
+				"jadminht",
+				"Snippet: jadminhtml"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"conso",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/media/rene/Dados/Sc Rene/pkg_birthdays",
+		"/media/rene/Dados/Sc Rene/pkg_birthdays/packages",
+		"/media/rene/Dados/Sc Rene/pkg_birthdays/packages/mod_birthdays_month",
+		"/media/rene/Dados/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/tmpl"
+	],
+	"file_history":
+	[
+		"/media/rene/Dados/Sc Rene/project/pkg_birthdays.sublime-project",
+		"/media/screne/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/mod_birthdays_month.xml",
+		"/media/screne/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/tmpl/default.php",
+		"/media/screne/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/views/birthdays/tmpl/default.php",
+		"/media/screne/3824CBA824CB6788/Sc Rene/project/pkg_birthdays.sublime-project",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/views/birthdays/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/README.md",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/views/birthday/tmpl/edit.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/tables/birthday.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/models/forms/birthday.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/install.mysql.utf8.sql",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/updates/mysql/1.0.0.sql",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/updates/mysql/1.0.2.sql",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/pkg_birthdays.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/birthdays.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/README.md",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/mod_birthdays_month.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/birthdays.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/models/fields/ordering.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/script.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/birthdays.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/controller.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/helpers/route.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/models/birthdays.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/router.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/views/birthdays/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/views/birthdays/view.html.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/helper.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/language/pt-BR/pt-BR.mod_birthdays_month.ini",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/language/pt-BR/pt-BR.mod_birthdays_month.sys.ini",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/mod_birthdays_month.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/mod_birthdays_month/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/packages/com_faq/faq.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/pkg_faq.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/updates/mysql/1.0.1.sql",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/updates/mysql/1.0.sql",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/helpers/birthdays.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/models/birthdays.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/controllers/birthdays.php",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jadminmodellist-simple.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/language/pt-BR/pt-BR.com_birthdays.ini",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/language/pt-BR/pt-BR.com_birthdays.ini",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jadmintable.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/media/css/frontend.css",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/media/js/bootstrap.min.js",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/phocaDownload/com_phocadownload_v2.1.6/site/views/category/view.html.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/phocaDownload/com_phocadownload_v2.1.6/site/controllers/user.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/phocaDownload/com_phocadownload_v2.1.6/site/controller.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/phocaDownload/com_phocadownload_v2.1.6/site/phocadownload.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/attachments/attachments-3.0.4/packages/attachments_component/site/controller.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/attachments/attachments-3.0.4/packages/attachments_component/site/controllers/attachments.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/attachments/attachments-3.0.4/packages/attachments_component/site/views/attachments/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/media/js/jquery.custom.js",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/site/views/birthdays/tmpl/default.xml",
+		"/home/screne/.gvfs/SFTP em servidor/var/www/joomla/administrator/components/com_birthdays/models/fields/ordering.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-books/pkg_books-master/packages/com_books/site/models/books.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-faq/pkg_faq-master/packages/com_faq/site/models/categories.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-faq/pkg_faq-master/packages/com_faq/site/models/featured.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-faq/pkg_faq-master/packages/com_faq/site/models/faq.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-curriculum/com_curriculum/site/models/curriculum.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-books/pkg_books-master/packages/com_books/site/views/books/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-books/pkg_books-master/packages/com_books/site/views/books/view.html.php",
+		"/home/screne/.gvfs/SFTP em servidor/var/www/develop/templates/bootstrap/html/mod_search/default.php",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsiteviewmenuparamslist.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/views/birthdays/view.html.php",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jadminlanguagelist.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jadminlist.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsiteviewmenuparams.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsiteviewmenu.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/User/jsiteviewmenuparamslist.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsiteviewhit.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/language/pt-BR/pt-BR.com_birthdays.sys.ini",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsitehelperroute.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsiteviewlist.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-curriculum/com_curriculum/admin/language/pt-BR/pt-BR.com_curriculum.ini",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jlanguagemenu.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jlanguagebasic.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-curriculum/com_curriculum/admin/language/pt-BR/pt-BR.com_curriculum.sys.ini",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jadminlanguagetitle.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jlanguageheading.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Extensions/joomlapro-curriculum/com_curriculum/admin/views/curriculums/tmpl/default.php",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/Joomla.tmLanguage",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/Joomla.sublime-build",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jlanguagemoduleadvanced.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jlanguageaddress.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jlang.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jinidesc.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/updates/index.html",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jcomponentmanifest.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages/com_birthdays/admin/sql/updates/mysql/index.html",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/models/faq.php",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsitecontroller.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/views/faq/view.html.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/faq.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/views/faq/tmpl/default.xml",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsitecomponentlegacy.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsiteview.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/com_faq.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/controller.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/models/faqs.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/views/faq/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/views/faqs/view.html.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/views/faqs/tmpl/default.xml",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/models/faqs/index.html",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/models/index.html",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jsitecomponent.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/admin/sql/updates/1.0.sql",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/views/faqs/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/view/faqs/view.html.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/view/faqs/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/view/faq/view.html.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/view/faqs/tmpl/index.html",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/view/faqs/index.html",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/site/index.html",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Example/Default.tmPreferences",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/admin/faq.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/site/index.html",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/index.html",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/com_faq/admin/site/index.html",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Joomla/jcomponentmanifestmodules.sublime-snippet",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Example/Default (Windows).sublime-keymap",
+		"/home/screne/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/screne/.config/sublime-text-2/Packages/joomla-bundle/Utils/doctype.sublime-snippet",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/admin/sql/updates/index.html",
+		"/home/screne/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/screne/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/screne/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/screne/.config/sublime-text-2/Packages/User/Base File.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/media/3824CBA824CB6788/Sc Rene/pkg_birthdays/packages"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"%d-%m-%Y",
+			"@makesoft",
+			"Makesoft"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"%Y-%m-%d",
+			"@yahoo",
+			"Rene Bentes Pinto"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "packages/mod_birthdays_month/tmpl/default.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SublimePythonIDE).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 423.0,
+						"translation.y": -0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "pkg-birthdays.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"birthdayshelper",
+				"packages/com_birthdays/admin/helpers/birthdays.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

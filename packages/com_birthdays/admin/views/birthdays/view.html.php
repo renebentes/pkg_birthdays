@@ -1,29 +1,27 @@
 <?php
 /**
- * @package     Birthdays
- * @subpackage	com_birthdays
- * @copyright   Copyright (C) MakeSoft, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     Joomla.Administrator
+ * @subpackage  com_birthdays
+ * @since       0.0.1
+ *
+ * @author      Rene Bentes Pinto <renebentes@yahoo.com.br>
+ * @link        http://renebentes.github.io
+ * @copyright   Copyright (C) 2012 - 2015 Rene Bentes Pinto, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
 // no direct access
 defined('_JEXEC') or die;
 
-jimport('joomla.application.component.view');
-
 /**
- * View class for a list of birthdays.
+ * View class for a list of Birthdays.
  *
- * @package     Birthdays
+ * @package     Joomla.Administrator
  * @subpackage  com_birthdays
- * @since       2.5
+ * @since       0.0.1
  */
-class BirthdaysViewBirthdays extends JView
+class BirthdaysViewBirthdays extends JViewLegacy
 {
-	protected $items;
-	protected $pagination;
-	protected $state;
-
 	/**
 	 * Method to display the view.
 	 *
@@ -31,30 +29,32 @@ class BirthdaysViewBirthdays extends JView
 	 *
 	 * @return  mixed  A string if successful, otherwise a JError object.
 	 *
-	 * @since   1.6
+	 * @since   0.0.1
 	 */
 	public function display($tpl = null)
 	{
 		// Initialise variables.
-		$this->items		= $this->get('Items');
-		$this->pagination	= $this->get('Pagination');
-		$this->state		= $this->get('State');
+		$this->items         = $this->get('Items');
+		$this->pagination    = $this->get('Pagination');
+		$this->state         = $this->get('State');
+		$this->filterForm    = $this->get('FilterForm');
+		$this->activeFilters = $this->get('ActiveFilters');
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
 		{
-			JError::raiseError(500, implode("\n", $errors));
+			JFactory::getApplication()->enqueueMessage(implode("\n", $errors), 'error');
 			return false;
 		}
 
-		// Get document
-		$doc = JFactory::getDocument();
-		$doc->setTitle(JText::_('COM_BIRTHDAYS_BIRTHDAYS_TITLE'));
-		$doc->addStyleSheet(JURI::root() . 'media/com_birthdays/css/backend.css');
-
-		$this->addToolbar();
-		// Include the component HTML helpers.
-		JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
+		// We do not need toolbar in the modal window.
+		if ($this->getLayout() !== 'modal')
+		{
+			// Load the submenu.
+			BirthdaysHelper::addSubmenu('administrator');
+			$this->addToolbar();
+			$this->sidebar = JHtmlSidebar::render();
+		}
 
 		parent::display($tpl);
 	}
@@ -64,70 +64,65 @@ class BirthdaysViewBirthdays extends JView
 	 *
 	 * @return  void
 	 *
-	 * @since   1.6
+	 * @since   0.0.1
 	 */
 	protected function addToolbar()
 	{
-		require_once JPATH_COMPONENT . '/helpers/birthdays.php';
-		$user = JFactory::getUser();
-		$canDo = BirthdaysHelper::getActions();
+		// Initialise Variables
+		$state = $this->get('State');
+		$canDo = BirthdaysHelper::getActions('com_birthdays');
+		$user  = JFactory::getUser();
 
-		JToolBarHelper::title(JText::_('COM_BIRTHDAYS_MANAGER_BIRTHDAYS'), 'birthday.png');
+		// Get the toolbar object instance.
+		$bar = JToolBar::getInstance('toolbar');
 
-		if ($user->authorise('core.create', 'com_birthdays') && $canDo->get('core.create'))
+		JToolBarHelper::title(JText::_('COM_BIRTHDAYS_MANAGER_BIRTHDAYS_TITLE'), 'calendar birthdays');
+
+		if ($canDo->get('core.create'))
 		{
-			JToolBarHelper::addNew('birthday.add');
+			JToolbarHelper::addNew('birthday.add');
 		}
 
-		if (($canDo->get('core.edit')))
+		if (($canDo->get('core.edit')) || ($canDo->get('core.edit.own')))
 		{
-			JToolBarHelper::editList('birthday.edit');
-		}
-
-		if ($canDo->get('core.edit.state'))
-		{
-			if ($this->state->get('filter.published') != 2)
-			{
-				JToolBarHelper::divider();
-				JToolBarHelper::publish('birthdays.publish', 'JTOOLBAR_PUBLISH', true);
-				JToolBarHelper::unpublish('birthdays.unpublish', 'JTOOLBAR_UNPUBLISH', true);
-			}
-
-			if ($this->state->get('filter.published') != -1)
-			{
-				JToolBarHelper::divider();
-				if ($this->state->get('filter.published') != 2)
-				{
-					JToolBarHelper::archiveList('birthdays.archive');
-				}
-				elseif ($this->state->get('filter.published') == 2)
-				{
-					JToolBarHelper::unarchiveList('birthdays.publish');
-				}
-			}
+			JToolbarHelper::editList('birthday.edit');
 		}
 
 		if ($canDo->get('core.edit.state'))
 		{
-			JToolBarHelper::checkin('birthdays.checkin');
+			JToolbarHelper::publish('birthdays.publish', 'JTOOLBAR_PUBLISH', true);
+			JToolbarHelper::unpublish('birthdays.unpublish', 'JTOOLBAR_UNPUBLISH', true);
+			JToolbarHelper::archiveList('birthdays.archive');
+			JToolbarHelper::checkin('birthdays.checkin');
 		}
 
-		if ($this->state->get('filter.published') == -2 && $canDo->get('core.delete'))
+		// Add a batch button.
+		if ($user->authorise('core.create', 'com_birthdays') && $user->authorise('core.edit', 'com_birthdays') && $user->authorise('core.edit.state', 'com_birthdays'))
 		{
-			JToolBarHelper::deleteList('', 'birthdays.delete', 'JTOOLBAR_EMPTY_TRASH');
-			JToolBarHelper::divider();
+			// Load the modal bootstrap script.
+			JHtml::_('bootstrap.modal', 'collapseModal');
+
+			// Instantiate a new JLayoutFile instance and render the batch button.
+			$layout = new JLayoutFile('joomla.toolbar.batch');
+			$title  = JText::_('JTOOLBAR_BATCH');
+			$dhtml  = $layout->render(array('title' => $title));
+			$bar->appendButton('Custom', $dhtml, 'batch');
+		}
+
+		if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
+		{
+			JToolbarHelper::deleteList('', 'birthdays.delete', 'JTOOLBAR_EMPTY_TRASH');
 		}
 		elseif ($canDo->get('core.edit.state'))
 		{
-			JToolBarHelper::trash('birthdays.trash');
-			JToolBarHelper::divider();
+			JToolbarHelper::trash('birthdays.trash');
 		}
 
 		if ($canDo->get('core.admin'))
 		{
 			JToolBarHelper::preferences('com_birthdays');
-			JToolBarHelper::divider();
 		}
+
 		JToolBarHelper::help('birthdays', $com = true);
 	}
 }

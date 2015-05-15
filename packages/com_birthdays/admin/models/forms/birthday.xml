@@ -1,9 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <form>
-	<fieldset name="details" addfieldpath="/administrator/components/com_birthdays/models/fields">
-		<field name="id" type="text" default="0" readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" />
-		<field name="name" type="text" class="inputbox" size="40" required="true" label="COM_BIRTHDAYS_FIELD_NAME_LABEL" description="COM_BIRTHDAYS_FIELD_NAME_DESC" />
-		<field name="grade" type="list" class="inputbox" size="1" required="true" default="1" label="COM_BIRTHDAYS_FIELD_GRADE_LABEL" description="COM_BIRTHDAYS_FIELD_GRADE_DESC">
+	<fieldset addfieldpath="/administrator/components/com_birthdays/models/fields">
+		<field
+			name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			class="readonly"
+			size="10"
+			default="0"
+			readonly="true"
+		/>
+
+		<field
+			name="name"
+			type="text"
+			label="COM_BIRTHDAYS_FIELD_NAME_LABEL"
+			description="COM_BIRTHDAYS_FIELD_NAME_DESC"
+			class="input-xxlarge input-large-text"
+			size="40"
+			required="true"
+		/>
+
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+			size="40"
+		/>
+
+		<field
+			name="grade"
+			type="list"
+			label="COM_BIRTHDAYS_FIELD_GRADE_LABEL"
+			description="COM_BIRTHDAYS_FIELD_GRADE_DESC"
+			size="1"
+			default="1"
+			required="true"
+		>
 			<option value="1">COM_BIRTHDAYS_GRADE_1</option>
 			<option value="2">COM_BIRTHDAYS_GRADE_2</option>
 			<option value="3">COM_BIRTHDAYS_GRADE_3</option>
@@ -21,34 +57,181 @@
 			<option value="15">COM_BIRTHDAYS_GRADE_15</option>
 			<option value="16">COM_BIRTHDAYS_GRADE_16</option>
 		</field>
-		<field name="nickname" type="text" class="inputbox" size="20" required="true" label="COM_BIRTHDAYS_FIELD_NICKNAME_LABEL" description="COM_BIRTHDAYS_FIELD_NICKNAME_DESC" />
-		<field name="picture" type="media" class="inputbox" directory="birthdays" label="COM_BIRTHDAYS_FIELD_PICTURE_LABEL" description="COM_BIRTHDAYS_FIELD_PICTURE_DESC" />
-		<field name="birthdate" type="calendar" class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S" filter="user_utc" required="true" label="COM_BIRTHDAYS_FIELD_BIRTHDATE_LABEL" description="COM_BIRTHDAYS_FIELD_BIRTHDATE_DESC" />
-		<field name="alias" type="text" class="inputbox" size="40" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" />
-		<field name="published" type="list" class="inputbox" size="1" default="1" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" filter="intval">
+
+		<field
+			name="nickname"
+			type="text"
+			label="COM_BIRTHDAYS_FIELD_NICKNAME_LABEL"
+			description="COM_BIRTHDAYS_FIELD_NICKNAME_DESC"
+			size="40"
+			required="true"
+		/>
+
+		<field
+			name="picture"
+			type="media"
+			label="COM_BIRTHDAYS_FIELD_PICTURE_LABEL"
+			description="COM_BIRTHDAYS_FIELD_PICTURE_DESC"
+			directory="birthdays"
+		/>
+
+		<field
+			name="birthdate"
+			type="calendar"
+			label="COM_BIRTHDAYS_FIELD_BIRTHDATE_LABEL"
+			description="COM_BIRTHDAYS_FIELD_BIRTHDATE_DESC"
+			size="40"
+			default="now"
+			format="%Y-%m-%d"
+			required="true"
+			filter="user_utc"
+		/>
+
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="chzn-color-state"
+			filter="intval"
+			size="1"
+			default="1">
 			<option value="1">JPUBLISHED</option>
 			<option value="0">JUNPUBLISHED</option>
 			<option value="2">JARCHIVED</option>
 			<option value="-2">JTRASHED</option>
 		</field>
-		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL" description="COM_BIRTHDAYS_FIELD_LANGUAGE_DESC" class="inputbox" >
+
+		<field
+			name="buttonspacer"
+			type="spacer"
+			description="JGLOBAL_ACTION_PERMISSIONS_DESCRIPTION"
+		/>
+
+		<field
+			name="created"
+			type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+		/>
+
+		<field
+			name="created_by"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_DESC"
+		/>
+
+		<field
+			name="created_by_alias"
+			type="text"
+			label="JGLOBAL_FIELD_CREATED_BY_ALIAS_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_ALIAS_DESC"
+			size="20"
+		/>
+
+		<field
+			name="modified"
+			type="calendar"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="COM_BIRTHDAYS_FIELD_MODIFIED_DESC"
+			class="readonly"
+			size="22"
+			readonly="true"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+		/>
+
+		<field
+			name="modified_by"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			class="readonly"
+			readonly="true"
+			filter="unset"
+		/>
+
+		<field
+			name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field
+			name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field
+			name="publish_up"
+			type="calendar"
+			label="COM_BIRTHDAYS_FIELD_PUBLISH_UP_LABEL"
+			description="COM_BIRTHDAYS_FIELD_PUBLISH_UP_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="publish_down"
+			type="calendar"
+			label="COM_BIRTHDAYS_FIELD_PUBLISH_DOWN_LABEL"
+			description="COM_BIRTHDAYS_FIELD_PUBLISH_DOWN_DESC"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="version"
+			type="text"
+			label="COM_BIRTHDAYS_FIELD_VERSION_LABEL"
+			description="COM_BIRTHDAYS_FIELD_VERSION_DESC"
+			class="readonly"
+			size="6"
+			readonly="true"
+			filter="unset"
+		/>
+
+		<field
+			name="ordering"
+			type="text"
+			label="JFIELD_ORDERING_LABEL"
+			description="JFIELD_ORDERING_DESC"
+			size="6"
+			default="0"
+		/>
+
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			size="1"
+		/>
+
+		<field
+			name="hits"
+			type="text"
+			label="JGLOBAL_HITS"
+			description="COM_BIRTHDAYS_FIELD_HITS_DESC"
+			class="readonly"
+			size="6"
+			readonly="true"
+			filter="unset"
+		/>
+
+		<field
+			name="language"
+			type="contentlanguage"
+			label="JFIELD_LANGUAGE_LABEL"
+			description="JGLOBAL_FIELD_LANGUAGE_DESC"
+		>
 			<option value="*">JALL</option>
 		</field>
-		<field name="access" type="accesslevel" class="inputbox" size="1" label="JFIELD_ACCESS_LABEL" description="JFIELD_ACCESS_DESC" />
-		<field name="ordering" type="ordering" class="inputbox" label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
-	</fieldset>
-
-	<fieldset name="publish">
-		<field name="created" type="calendar" class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S" filter="user_utc" label="JGLOBAL_FIELD_CREATED_LABEL" description="JGLOBAL_FIELD_CREATED_DESC" />
-		<field name="created_by" type="user" label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_DESC" />
-		<field name="created_by_alias" type="text" class="inputbox" size="20" label="JGLOBAL_FIELD_CREATED_BY_ALIAS_LABEL" description="JGLOBAL_FIELD_CREATED_BY_ALIAS_DESC" />
-		<field name="version" type="text" class="readonly" size="6" readonly="true" filter="unset" label="COM_BIRTHDAYS_FIELD_VERSION_LABEL" description="COM_BIRTHDAYS_FIELD_VERSION_DESC" />
-		<field name="modified" type="calendar" class="readonly" size="22" readonly="true" format="%Y-%m-%d %H:%M:%S" filter="user_utc" label="JGLOBAL_FIELD_MODIFIED_LABEL" description="COM_BIRTHDAYS_FIELD_MODIFIED_DESC" />
-		<field name="modified_by" type="user" class="readonly" readonly="true" filter="unset" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" />
-		<field name="publish_up" type="calendar" class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22" filter="user_utc" label="JGLOBAL_FIELD_PUBLISH_UP_LABEL" description="JGLOBAL_FIELD_PUBLISH_UP_DESC" />
-		<field name="publish_down" type="calendar" class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22" filter="user_utc" label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL" description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC" />
-		<field name="checked_out" type="hidden" filter="unset" />
-		<field name="checked_out_time" type="hidden" filter="unset" />
-		<field name="hits" type="text" class="readonly" size="6" readonly="true" filter="unset" label="JGLOBAL_HITS" description="COM_BIRTHDAYS_FIELD_HITS_DESC" />
 	</fieldset>
 </form>

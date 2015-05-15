@@ -1,0 +1,1 @@
+ALTER TABLE `#__birthdays` CHANGE COLUMN `published` `state` TINYINT(3) NOT NULL DEFAULT 0;

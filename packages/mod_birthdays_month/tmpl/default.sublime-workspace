@@ -1,0 +1,876 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"para",
+				"params"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"limit",
+				"limitstart"
+			],
+			[
+				"jadminlayoutc",
+				"jadminlayoutcpanel	jadminlayoutcpanel"
+			],
+			[
+				"Bi",
+				"BirthdaysHelper"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"jadminhelp",
+				"jadminhelperbutton	jadminhelperbutton"
+			],
+			[
+				"jadminhel",
+				"jadminhelpergetactions	jadminhelpergetactions"
+			],
+			[
+				"res",
+				"resized"
+			],
+			[
+				"resi",
+				"resized"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"jadminhelperop",
+				"jadminhelperoptionscustom	jadminhelperoptionscustom"
+			],
+			[
+				"jadminhe",
+				"jadminhelperoptions	jadminhelperoptions"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"cur_",
+				"cur_year"
+			],
+			[
+				"creat",
+				"created_year"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"bread",
+				"Breadcrumbs"
+			],
+			[
+				"TPL",
+				"TPL_BOOTSTRAP_TOOLTIP_USER_LOGOUT"
+			],
+			[
+				"logo",
+				"logoImage"
+			],
+			[
+				"en",
+				"endif"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"coun",
+				"countModules"
+			],
+			[
+				"copy",
+				"copyright"
+			],
+			[
+				"stri",
+				"strip_tags"
+			],
+			[
+				"htmls",
+				"htmlspecialchars_decode"
+			],
+			[
+				"bt",
+				"btn-primary"
+			],
+			[
+				"J",
+				"JText"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"f",
+				"flink"
+			],
+			[
+				"searc",
+				"search"
+			],
+			[
+				"cou",
+				"countModules"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tagh",
+				"taghclose"
+			],
+			[
+				"jquer",
+				"jquery"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"lis",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 138.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"jsitecontro",
+				"Snippet: jsitecontrollerlist"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"manifest",
+				"Snippet: jpluginmanifest"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"jadminlayoutc",
+				"Snippet: jadminlayoutcpanel"
+			],
+			[
+				"jlayou",
+				"Snippet: jadminlayoutcpanel"
+			],
+			[
+				"ht",
+				"Snippet: lorem - HTML Kitchen sink"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"conso",
+				"Set Syntax: R Console"
+			],
+			[
+				"Snippet: jpa",
+				"Snippet: jpackagemanifest"
+			],
+			[
+				"Snippet: jcom	",
+				"Snippet: jcomponentmanifestupdate"
+			],
+			[
+				"Snippet: image",
+				"Snippet: jsitehelperimage"
+			],
+			[
+				"Snippet: jsitemodule",
+				"Snippet: jsitemodulemanifest"
+			],
+			[
+				"Snippet: jsitemoduleman",
+				"Snippet: jsitemodulemanifest"
+			],
+			[
+				"Snippet: jsitemodulema",
+				"Snippet: jsitemodulemanifest"
+			],
+			[
+				"Snippet: jsitemodu",
+				"Snippet: jsitemodulemanifest"
+			],
+			[
+				"Snippet: jsite",
+				"Snippet: jsitemodulemanifest"
+			],
+			[
+				"Snippet: fi",
+				"Snippet: jadminlayoutfieldset"
+			],
+			[
+				"Snippet: pub",
+				"Snippet: jsitemodelfilterpublish"
+			],
+			[
+				"Snippet: jadminfor",
+				"Snippet: jadminform"
+			],
+			[
+				"Snippet: j",
+				"Snippet: jadminform"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: jcomponentmanifest"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/categories_default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/categories/tmpl/default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_list/list/index.html",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_list/positions/list/element.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_list/positions/list/index.html",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_list/positions/last_command/list/element.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/positions/current_command/item/element.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/modules/mod_cck_list/tmpl/default_items.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_list/positions/last_command/list/index.html",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/positions/current_command/item/mainbody.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/turquoise/html/tpl_seb_list/index.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cck/rendering/rendering_item.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_one/index.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_blog/config.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/turquoise/html/tpl_seb_blog/index.html",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/positions/current_command/content/mainbody.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/positions/current_command/intro/mainbody.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/positions/current_command/intro/index.html",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/positions/current_command/content/index.html",
+		"/home/screne/.cache/.fr-VJ1ozi/index.php",
+		"/media/screne/Dados/fixo",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/index.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cck/rendering/document/document.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_list/index.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/plugins/content/cck/cck.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_one/config.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/article/tmpl/default_links.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/plugins/cck_storage_location/joomla_article/tmpl/item.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/pagination/pagination.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/category_default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/modules/mod_menu/tmpl/default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cck/rendering/rendering.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/modules/mod_menu/tmpl/default_separator.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/modules/mod_menu/tmpl/default_heading.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/modules/mod_menu/tmpl/default_component.php",
+		"/home/screne/.cache/.fr-bCxETW/cep/index.php",
+		"/home/screne/.cache/.fr-gOiejv/cep/js/cep.js",
+		"/home/screne/.cache/.fr-tZujpY/cep/exemplo_limpo.php",
+		"/home/screne/.cache/.fr-rK4wkw/cep/ie.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/plugins/content/cck/script.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/article/tmpl/default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_cck/views/list/tmpl/default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/layout/helper.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/icons.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/helpers/icon.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/category/tmpl/blog_children.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/featured/tmpl/default_item.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/category/tmpl/blog_links.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/category/tmpl/blog_item.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/category/tmpl/blog.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/featured/tmpl/default.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/blog_style_default_item_title.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/info_block/publish_date.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/info_block/category.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/info_block/author.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/content/info_block/block.php",
+		"/media/screne/Dados/Sc Rene/joomla-bundle/Joomla/jplugincontentbeforedisplay.sublime-snippet",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/content.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_blog/index.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/templates/seb_minima/config.php",
+		"/media/screne/Dados/Sc Rene/Joomla! Extensions/Templates/afterburner2-bundle/rt_afterburner2/html/base_override.php",
+		"/media/screne/Dados/Sc Rene/Joomla! Extensions/Templates/afterburner2-bundle/rt_afterburner2/html/com_content/featured/default.php",
+		"/media/screne/Dados/Sc Rene/Joomla! Extensions/Templates/purity_iii/plugin/plg_system_t3.v2.1.0/t3.php",
+		"/media/screne/Dados/Sc Rene/Joomla! Extensions/Templates/purity_iii/template/purity_iii.v1.0.0 Developer preview/index.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/configuration.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/document/html/renderer/message.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/layouts/joomla/system/message.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/factory.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/application/cms.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/response/json.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/language/en-GB/en-GB.lib_joomla.ini",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/document/document.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/document/html/renderer/head.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/filesystem/file.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/component/helper.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/legacy/view/legacy.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_cpanel/views/cpanel/view.html.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_content/views/article/view.html.php",
+		"/home/screne/.cache/.fr-BMPZDy/Bootstrap-Template-3.2.0/error.php",
+		"/home/screne/.cache/.fr-3P2tRQ/Bootstrap-Template-3.2.0/component.php",
+		"/home/screne/.cache/.fr-G8HSre/Bootstrap-Template-3.2.0/logic.php",
+		"/home/screne/Downloads/plg_jw_sig-v3.0.1_j1.5-3.x/plugin/jw_sig.php",
+		"/home/screne/Downloads/node-v0.10.30/README.md",
+		"/home/screne/simatex.sh",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_content/helpers/content.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_content/controllers/article.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_content/controller.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/object/object.php",
+		"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_content/controllers/articles.php",
+		"/home/screne/.cache/.fr-aOyK1n/tinymce3.php",
+		"/home/screne/.cache/.fr-fiwcLf/simpleimageuploadbutton/simpleimageuploadbutton.php",
+		"/home/screne/.cache/.fr-NAMsl6/phocadownload.php",
+		"/media/screne/3824CBA824CB6788/Sc Rene/project/develop3.sublime-project",
+		"/home/screne/.cache/.fr-eigare/pagenavext/tmpl/default2.php",
+		"/home/screne/.cache/.fr-KKa3ux/pagenavext.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/plugins/content/pagenavigation/pagenavigation.xml",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/plugins/content/pagenavigation/pagenavigation.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/plugins/content/pagebreak/pagebreak.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/article/tmpl/default.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_mailto/helpers/mailto.php",
+		"/home/screne/.cache/.fr-wcBq9F/sped-install/debian/installDebian.sh",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_mailto/views/mailto/tmpl/default.php",
+		"/home/screne/.cache/.fr-MidODf/sped-install/spedinstall.sh",
+		"/media/3824CBA824CB6788/Sc Rene/Comandos Linux/script/firewall",
+		"/media/3824CBA824CB6788/Sc Rene/Joomla! Extensions/Templates/purity_iii/template/purity_iii.v1.0.0 Developer preview/html/com_content/article/default.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/article/tmpl/default_links.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/templates/beez3/error.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/legacy/error/error.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/templates/protostar/error.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/html/grid.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/html/jgrid.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_content/views/articles/tmpl/default.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/category/tmpl/default.xml",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/helpers/icon.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/language/en-GB/en-GB.ini",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/document/html/html.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla/view/html.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/packages/mod_faq_latest/tmpl/default.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/packages/mod_faq_latest/helper.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/packages/mod_faq_latest/mod_faq_latest.php",
+		"/media/3824CBA824CB6788/Sc Rene/pkg_faq/packages/com_faq/admin/views/cpanel/tmpl/default.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/components/com_content/views/category/tmpl/blog.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/cms/pagination/pagination.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/templates/protostar/html/pagination.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/legacy/model/list.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/media/jui/less/pagination.less",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/administrator/templates/hathor/html/com_admin/sysinfo/default_phpsettings.php",
+		"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/modules/mod_breadcrumbs/tmpl/default.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/plugins",
+			"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/modules",
+			"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries/cck",
+			"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/components/com_cck",
+			"/run/user/1000/gvfs/sftp:host=servidor.8bec.eb.mil.br/var/www/develop3/libraries",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/legacy",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/libraries/joomla",
+			"<project>",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/language",
+			"<project>",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_weblinks",
+			"<project>",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop3/administrator/components/com_weblinks",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop/components/com_service",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop/libraries",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop/plugins",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop/administrator/language/en-GB",
+			"<project>",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop/libraries",
+			"<project>",
+			"/home/screne/.gvfs/SFTP em servidor.8bec.eb.mil.br/var/www/develop/administrator/components",
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"$this->list",
+			"$me->list",
+			"$this->list",
+			"items_number",
+			"$line_main_1",
+			"$line_main",
+			"line_main",
+			"info_block_s",
+			"info_",
+			"<!-- Begin: SEBLOD 3.x Document { www.seblod.com } -->",
+			"system",
+			"getMessageQueue",
+			"CLO",
+			"Close\nCLOSE\nJC",
+			"addScript",
+			"clean",
+			"read",
+			"exists",
+			"files",
+			"baseurl",
+			"JObject",
+			"date",
+			"calendar",
+			"getMessage",
+			"cb",
+			"JPagination",
+			"jpagination",
+			"jimport",
+			"ag.",
+			"JException",
+			"setError",
+			"SOME_ERROR_CODE",
+			"columns",
+			"set",
+			"insert",
+			"columns",
+			"values",
+			"insert",
+			"mCatid",
+			"setQuery",
+			"loadObject",
+			"setQuery",
+			"COM_CONTACT_WARNING_SAME_NAME",
+			"Busca",
+			"Parâmetros de Filtro de Texto",
+			"modelo",
+			"Modelo",
+			" span12 small",
+			"LayoutHelper",
+			"execute",
+			"preprocessData",
+			"preProccessData",
+			"Searching",
+			"prePro\npreproccessData",
+			"prePro\n",
+			"/**\n",
+			"load",
+			"execute",
+			"count",
+			"where",
+			"getForm",
+			"save",
+			"getModel",
+			"Você não tem permissão para usar este link para acessar diretamente esta página",
+			"mootools",
+			"setup",
+			"getField",
+			"getInstance",
+			"JForm",
+			"jform",
+			"onContentPrepareForm",
+			"getInstance",
+			"load",
+			"get",
+			" default=\"1\"",
+			"radio",
+			"COM_INSTALLER_HEADING_DETAILSURL",
+			"category",
+			"popup",
+			"jreq",
+			"edit",
+			"Joomla.popupWindow",
+			"edit",
+			"delete",
+			"JArrayHelper",
+			"publish",
+			"JHtmlIcon",
+			"icon",
+			"icon.php",
+			"publish",
+			"JHtmlIcon",
+			"@",
+			"setFiel",
+			"JRoute",
+			"loadField",
+			"loadFIeld",
+			"getField",
+			"editList",
+			"type",
+			"JFIELD",
+			"type",
+			"artocle",
+			"modal",
+			"preview\n",
+			"preview",
+			"edit",
+			"Standard",
+			"edit",
+			"TITLE",
+			"$offset",
+			"show_subcategory_content",
+			"getUserStateFromRequest",
+			"3",
+			"4",
+			"2",
+			"3",
+			"article",
+			"show_emp",
+			"JGLOBAL_SHOW_UNAUTH_LINKS_LABEL",
+			"COM_CONTENT_NO_ARTICLES_LABEL",
+			"JGLOBAL_SHOW",
+			"EMPTY_CATEGO",
+			"${1",
+			"getlimi",
+			"getPa",
+			"get",
+			"strip",
+			"JGLOBAL_LIST_HITS_LABEL"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Pesquisa",
+			"Configurações de Filtro de Texto",
+			"tema",
+			"Tema",
+			"",
+			"list",
+			"4",
+			"5",
+			"3",
+			"4",
+			"record",
+			"item",
+			"${2",
+			"${2/",
+			"pt-BR",
+			"\\$",
+			"state",
+			"$2"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"project": "default.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"jfactory",
+				"libraries/joomla/factory.php"
+			],
+			[
+				"error",
+				"libraries/legacy/error/error.php"
+			],
+			[
+				"jhtml",
+				"libraries/joomla/document/html/html.php"
+			],
+			[
+				"jpagination",
+				"media/jui/less/pagination.less"
+			],
+			[
+				"searching",
+				"administrator/templates/hathor/html/com_admin/sysinfo/default_phpsettings.php"
+			],
+			[
+				"exception",
+				"libraries/legacy/database/exception.php"
+			],
+			[
+				"jobject",
+				"libraries/joomla/object/object.php"
+			],
+			[
+				"jmodelform",
+				"libraries/joomla/application/component/modelform.php"
+			],
+			[
+				"jcontroller",
+				"libraries/joomla/application/component/controller.php"
+			],
+			[
+				"jmodel",
+				"libraries/joomla/application/component/model.php"
+			],
+			[
+				"jmodelitem",
+				"libraries/joomla/application/component/modelitem.php"
+			],
+			[
+				"jtable",
+				"libraries/joomla/database/table.php"
+			],
+			[
+				"user",
+				"libraries/fof/form/field/user.php"
+			],
+			[
+				"jcontrollerform",
+				"libraries/joomla/application/component/controllerform.php"
+			],
+			[
+				"jrequest",
+				"libraries/joomla/environment/request.php"
+			],
+			[
+				"jview",
+				"libraries/joomla/application/component/view.php"
+			],
+			[
+				"jviewlegacy",
+				"plugins/system/t3/includes/joomla30/viewlegacy.php"
+			],
+			[
+				"search",
+				"administrator/components/com_search/helpers/search.php"
+			],
+			[
+				"jmodellist",
+				"libraries/joomla/application/component/modellist.php"
+			],
+			[
+				"jevent",
+				"libraries/joomla/event/event.php"
+			],
+			[
+				"jplugin",
+				"libraries/joomla/plugin/plugin.php"
+			],
+			[
+				"jmodeladmin",
+				"libraries/joomla/application/component/modeladmin.php"
+			],
+			[
+				"jcategories",
+				"libraries/joomla/application/categories.php"
+			],
+			[
+				"jinput",
+				"libraries/joomla/application/input.php"
+			],
+			[
+				"jroute",
+				"libraries/joomla/application/router.php"
+			],
+			[
+				"contenthelperroute",
+				"components/com_content/helpers/route.php"
+			],
+			[
+				"jtoolbar",
+				"libraries/joomla/html/toolbar.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 318.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

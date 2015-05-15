@@ -1,24 +1,38 @@
 <?php
 /**
- * @package     Birthdays
- * @subpackage	com_birthdays
- * @copyright   Copyright (C) Makesoft, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     Joomla.Administrator
+ * @subpackage  com_birthdays
+ * @since       0.0.1
+ *
+ * @author      Rene Bentes Pinto <renebentes@yahoo.com.br>
+ * @link        http://renebentes.github.io
+ * @copyright   Copyright (C) 2012 - 2015 Rene Bentes Pinto, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-// no direct access
-defined('_JEXEC') or die;
+// No direct access.
+defined('_JEXEC') or die('Restricted access!');
+
+JHtml::_('behavior.tabstate');
+
+// Defines variables
+$app = JFactory::getApplication();
 
 // Access check.
 if (!JFactory::getUser()->authorise('core.manage', 'com_birthdays'))
 {
-	return JError::raiseWarning(404, JText::_('JERROR_ALERTNOAUTHOR'));
+  $app->enqueueMessage(JText::_('JERROR_ALERTNOAUTHOR'), 'error');
+  return false;
 }
 
-// Include dependencies
-jimport('joomla.application.component.controller');
+// Load helper
+JLoader::register('BirthdaysHelper', __DIR__ . '/helpers/birthdays.php');
 
-// Execute the task.
-$controller = JController::getInstance('Birthdays');
-$controller->execute(JRequest::getCmd('task'));
+// Get an instance of the controller prefixed by Birthdays
+$controller = JControllerLegacy::getInstance('Birthdays');
+
+// Perform the Request task
+$controller->execute($app->input->get('task'));
+
+// Redirect if set by the controller
 $controller->redirect();

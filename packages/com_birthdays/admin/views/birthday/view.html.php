@@ -1,49 +1,56 @@
 <?php
 /**
- * @package     Birthdays
- * @subpackage	com_birthdays
- * @copyright   Copyright (C) MakeSoft, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     Joomla.Administrator
+ * @subpackage  com_birthdays
+ * @since       0.0.1
+ *
+ * @author      Rene Bentes Pinto <renebentes@yahoo.com.br>
+ * @link        http://renebentes.github.io
+ * @copyright   Copyright (C) 2012 - 2015 Rene Bentes Pinto, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-// no direct access
-defined('_JEXEC') or die;
-
-jimport('joomla.application.component.view');
+// No direct access.
+defined('_JEXEC') or die('Restricted access!');
 
 /**
- * View to edit a birthdays.
+ * View class for edit a Birthday.
  *
- * @package		Birthdays
- * @subpackage	com_birthdays
- * @since		2.5
+ * @package     Joomla.Administrator
+ * @subpackage  com_birthdays
+ * @since       0.0.1
  */
-class BirthdaysViewBirthday extends JView
+class BirthdaysViewBirthday extends JViewLegacy
 {
-	protected $form;
-	protected $item;
-	protected $state;
-
 	/**
-	 * Display the view
+	 * Method to display the view.
+	 *
+	 * @param   string  $tpl  A template file to load. [optional]
+	 *
+	 * @return  mixed  A string if successful, otherwise a JError object.
+	 *
+	 * @since   0.0.1
 	 */
 	public function display($tpl = null)
 	{
-		// Initialiase variables.
+		// Initialise variables.
 		$this->form  = $this->get('Form');
 		$this->item  = $this->get('Item');
 		$this->state = $this->get('State');
+		$this->canDo = BirthdaysHelper::getActions('com_birthdays');
 
 		// Check for errors.
-		if (count($errors = $this->get('Errors'))) {
-			JError::raiseError(500, implode("\n", $errors));
+		if (count($errors = $this->get('Errors')))
+		{
+			JFactory::getApplication()->enqueueMessage(implode("\n", $errors), 'error');
 			return false;
 		}
 
-		// Get document
-		$doc = JFactory::getDocument();
-		$doc->setTitle(JText::_('COM_BIRTHDAYS_BIRTHDAY_TITLE'));
-		$doc->addStyleSheet(JURI::root() . 'media/com_birthdays/css/backend.css');
+		// We do not need toolbar in the modal window.
+		if ($this->getLayout() !== 'modal')
+		{
+			$this->form->setFieldAttribute('language', 'readonly', 'true');
+		}
 
 		$this->addToolbar();
 
@@ -53,43 +60,56 @@ class BirthdaysViewBirthday extends JView
 	/**
 	 * Add the page title and toolbar.
 	 *
-	 * @since	2.5
+	 * @return  void
+	 *
+	 * @since   0.0.1
 	 */
 	protected function addToolbar()
 	{
-		JRequest::setVar('hidemainmenu', true);
+		JFactory::getApplication()->input->set('hidemainmenu', true);
 
+		// Initialise Variables
 		$user       = JFactory::getUser();
 		$userId     = $user->get('id');
 		$isNew      = ($this->item->id == 0);
 		$checkedOut = !($this->item->checked_out == 0 || $this->item->checked_out == $userId);
-		$canDo		= BirthdaysHelper::getActions();
 
-		JToolBarHelper::title($isNew ? JText::_('COM_BIRTHDAYS_BIRTHDAY_ADD') : JText::_('COM_BIRTHDAYS_BIRTHDAY_EDIT'), 'birthday.png');
+		// Since we do not track these assets at the item level.
+		$canDo = $this->canDo;
 
-		// If not checked out, can save the item.
-		if (!$checkedOut && $canDo->get('core.edit')) {
-			JToolBarHelper::apply('birthday.apply');
-			JToolBarHelper::save('birthday.save');
+		JToolbarHelper::title(JText::_('COM_BIRTHDAYS_MANAGER_' . ($checkedOut ? 'VIEW_BIRTHDAY' : ($isNew ? 'ADD_BIRTHDAY' : 'EDIT_BIRTHDAY'))), 'pencil-2 birthday-add');
 
-			if ($canDo->get('core.create')) {
-				JToolBarHelper::save2new('birthday.save2new');
+		// Built the actions for new and existing records.
+		// For new records, check the create permission.
+		if ($isNew)
+		{
+			JToolbarHelper::apply('birthday.apply');
+			JToolbarHelper::save('birthday.save');
+			JToolbarHelper::save2new('birthday.save2new');
+			JToolbarHelper::cancel('birthday.cancel');
+		}
+		else
+		{
+			// Can not save the record if it's checked out.
+			if (!$checkedOut)
+			{
+				// Since it's an existing record, check the edit permission, or fall back to edit own if the owner.
+				if ($canDo->get('core.edit') || ($canDo->get('core.edit.own') && $this->item->created_by == $userId))
+				{
+					JToolbarHelper::apply('birthday.apply');
+					JToolbarHelper::save('birthday.save');
+
+					// We can save this record, but check the create permission to see if we can return to make a new one.
+					if ($canDo->get('core.create'))
+					{
+						JToolbarHelper::save2new('birthday.save2new');
+					}
+				}
 			}
+
+			JToolbarHelper::cancel('birthday.cancel', 'JTOOLBAR_CLOSE');
 		}
 
-		// If an existing item, can save to a copy.
-		if (!$isNew && $canDo->get('core.create')) {
-			JToolBarHelper::save2copy('birthday.save2copy');
-		}
-
-		if (empty($this->item->id))  {
-			JToolBarHelper::cancel('birthday.cancel');
-		}
-		else {
-			JToolBarHelper::cancel('birthday.cancel', 'JTOOLBAR_CLOSE');
-		}
-
-		JToolBarHelper::divider();
 		JToolBarHelper::help('birthday', $com = true);
 	}
 }

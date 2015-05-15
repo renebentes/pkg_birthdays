@@ -2,7 +2,7 @@
 /**
  * @package     Birthdays Month
  * @subpackage  mod_birthdays_month
- * @copyright   Copyright (C) 2013 Makesoft, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2013 Rene Bentes Pinto, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -37,7 +37,7 @@ abstract class modBirthdaysMonthHelper
 		$query->select('a.id, a.nickname, a.grade, a.birthdate');
 		$query->from('#__birthdays AS a');
 		$query->where('a.published = 1 AND MONTH(a.birthdate) = ' . (int)JFactory::getDate()->format('m'));
-		$query->order('a.birthdate ASC');
+		$query->order('DAY(a.birthdate) ASC');
 
 		// Inject the query and load the items.
 		$db->setQuery($query);

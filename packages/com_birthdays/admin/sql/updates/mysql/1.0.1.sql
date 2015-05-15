@@ -1,0 +1,1 @@
+ALTER TABLE `#__birthdays` CHANGE COLUMN `birthdate` `birthdate` DATE NOT NULL DEFAULT '0000-00-00';

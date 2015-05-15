@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fields name="filter">
+    <field name="search" type="text" label="COM_BIRTHDAYS_FIELD_FILTER_SEARCH_DESC" hint="JSEARCH_FILTER" />
+    <field name="state" type="status" label="COM_BIRTHDAYS_FIELD_FILTER_STATE_LABEL" description="COM_BIRTHDAYS_FIELD_FILTER_STATE_DESC" onchange="this.form.submit();">
+      <option value="">JOPTION_SELECT_PUBLISHED</option>
+    </field>
+    <field name="month" type="month" label="COM_BIRTHDAYS_FIELD_FILTER_MONTH_LABEL" description="COM_BIRTHDAYS_FIELD_FILTER_MONTH_DESC" first="1" last="12" step="1" onchange="this.form.submit();">
+      <option value="">COM_BIRTHDAYS_OPTION_SELECT_MONTH</option>
+    </field>
+  </fields>
+  <fields name="list">
+    <field name="fullordering" type="list" label="COM_BIRTHDAYS_FIELD_LIST_FULL_ORDERING_LABEL" description="COM_BIRTHDAYS_FIELD_LIST_FULL_ORDERING_DESC" onchange="this.form.submit();" default="a.name ASC">
+      <option value="">JGLOBAL_SORT_BY</option>
+      <option value="a.ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+      <option value="a.ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+      <option value="a.state ASC">JSTATUS_ASC</option>
+      <option value="a.state DESC">JSTATUS_DESC</option>
+      <option value="a.name ASC">COM_BIRTHDAYS_HEADING_NAME_ASC</option>
+      <option value="a.name DESC">COM_BIRTHDAYS_HEADING_NAME_DESC</option>
+      <option value="a.created_by ASC">JAUTHOR_ASC</option>
+      <option value="a.created_by DESC">JAUTHOR_DESC</option>
+      <option value="a.created ASC">JDATE_ASC</option>
+      <option value="a.created DESC">JDATE_DESC</option>
+      <option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+      <option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+    </field>
+    <field name="limit" type="limitbox" class="inputbox input-mini" label="COM_BIRTHDAYS_FIELD_LIST_LIMIT_LABEL" description="COM_BIRTHDAYS_FIELD_LIST_LIMIT_DESC" default="25" onchange="this.form.submit();" />
+  </fields>
+</form>
